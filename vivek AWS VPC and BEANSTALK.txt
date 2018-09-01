@@ -1,0 +1,30 @@
+VPC
+==============
+VPC -virtual private cloud 
+  
+AWS - Search VPC
+    -Your VPCs
+    -Create VPC
+        -> Name Tag= vivek-vpc
+        _> IPv4 CIDR block = 10.0.0.0/24  0-255  256
+                              8 8 8  8
+        where 8 is block (2^8) 
+        to find out IP address range 
+        8+8+8+8 = 32
+        32-24 = 8
+        2^8  = 256
+
+    - Now Click on subnet
+    - create subnet
+                -> Name tag = vivek-subnet1
+                -> Availability Zone = east-2a
+                -> VPC               =  10.32.0.0/25 : 0-127 : 128
+                             
+                
+                 
+
+
+Beanstalk : platform tomacat
+ 
+
+

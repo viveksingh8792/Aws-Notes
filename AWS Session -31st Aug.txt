@@ -1,0 +1,55 @@
+Today's Topics 
+==========================
+-> BeansTalk : web site hosting 
+-> VPC : virtual private cloud 
+
+
+BeansTalk : web site hosting 
+======================================
+-We will create new resource where web can be hosted
+-Beanstalk will create VM instance automatically 
+
+Open Elastic beanstalk
+
+     -> Create new Application    
+
+
+VPC : virtual private cloud 
+====================================r
+Zone for data center location	: us-east-2a* ,west-a , sout etc.
+		
+CIDR Block :		ip address range 
+			10.31.0.1/24
+			8+8+8+8 
+			32 -24 = 8
+			2^8	= 256	
+
+Virtual(VPC) Network: 10.0.0.0/24
+			10.31.0.0/24   0-255 : 256
+
+Subnet 		: small group of network is subnet 
+		: subnet can private or public 
+
+		Subnet 1:
+			10.31.0.0/25	: 0-127  : 128
+		Subnet 2:		
+			10.31.0.128/25	: 128-255  : 128
+
+Gateway		: enable the subnet to access of internet               
+                  goto actions 
+                  attach to vivek-subnet1
+tag name : vivek-gateway
+
+		-Attach vpc to gateway 
+
+Routetable	: allow port inbould/incoming and output/ougoing rule for private and public network 
+
+		
+Security Group : go to inbound options select 
+                 http- for no security
+                 https - for security
+                 ssh
+                 mysql/myauro(3306)
+
+                 
+
