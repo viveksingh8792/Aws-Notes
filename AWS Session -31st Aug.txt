@@ -26,31 +26,38 @@ CIDR Block :		ip address range
 
 Virtual(VPC) Network: 10.0.0.0/24
    ------ Click on actions after creating VPC =>  ACTIONS  => Edit CIDR =>  IPV4 add 10.31.0.0/24
-			10.31.0.0/24   0-255 : 256
-
+			10.31.0.0/24   0-255 : 256  
+	****After VPC setup Check Following things
+	      ==> DNS Hostname :- YES
+              ==> DNS Resolution :- YES
+	      ==> Cofirm location : for e.g zone = east-2a
+	      
 Subnet 		: small group of network is subnet 
 		: subnet can private or public 
 
-		Subnet 1:
+		Subnet 2:
 			10.31.0.0/25	: 0-127  : 128
-		Subnet 2:		
-			10.31.0.128/25	: 128-255  : 128
+		                                         (Subnet 2:		
+			                                   10.31.0.128/25	: 128-255  : 128)
 
 Gateway		: enable the subnet to access of internet               
                   goto actions 
-                  attach to vivek-subnet1
-tag name : vivek-gateway
+                  attach to created vpc file
+tag name : vivek-gateway or anything
 
 		-Attach vpc to gateway 
 
-Routetable	: allow port inbould/incoming and output/ougoing rule for private and public network 
+Routetable	: allow port inbound/incoming and output/outgoing rule for private and public network 
+        ---> Inbound ===
 
 		
-Security Group : go to inbound options select 
+Security Group : go to inbound Rules options select --> add another rule
                  http- for no security
                  https - for security
                  ssh
                  mysql/myauro(3306)
+		 
+    ----> Outbound all protocol is autoselected
 
                  
 
