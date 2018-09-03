@@ -25,6 +25,7 @@ CIDR Block :		ip address range
 			2^8	= 256	
 
 Virtual(VPC) Network: 10.0.0.0/24
+   ------ Click on actions after creating VPC =>  ACTIONS  => Edit CIDR =>  IPV4 add 10.31.0.0/24
 			10.31.0.0/24   0-255 : 256
 
 Subnet 		: small group of network is subnet 
