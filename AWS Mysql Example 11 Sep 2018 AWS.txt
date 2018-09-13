@@ -1,0 +1,39 @@
+mysql> create database company;
+
+
+
+
+mysql> use company;
+
+mysql> create table emp(
+    -> id int,
+    -> name varchar(30),
+    -> age int);
+
+
+mysql> insert into emp values(1,'aman',25);
+
+
+mysql> select * from emp;
++------+------+------+
+| id   | name | age  |
++------+------+------+
+|    1 | aman |   25 |
++------+------+------+
+1 row in set (0.00 sec)
+
+mysql> insert into emp values(2,'mohit',24);
+
+
+mysql> update emp set age=25 where id=2;
+
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from emp;
++------+-------+------+
+| id   | name  | age  |
++------+-------+------+
+|    1 | aman  |   25 |
+|    2 | mohit |   25 |
++------+-------+------+
+2 rows in set (0.00 sec)

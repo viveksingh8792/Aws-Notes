@@ -1,0 +1,31 @@
+--creating database--
+create database dbname;
+
+---Using database
+use dbname;
+
+
+--creating table--
+create table tbname(
+colname datatype,
+colname datatype);
+
+
+--inserting records--
+insert into tbname values();
+
+--selecting--
+select * from tbname;
+
+select colname from tbname;
+
+--update--
+update tbname set colname=new_value 
+
+update tbname set colname=new_value where unique_col=value;
+
+
+--delete--
+delete from tbname;
+
+delete from tbname where unique_col=value;
